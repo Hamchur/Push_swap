@@ -1,0 +1,13 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory `/Users/hamchur/Desktop/Push_swap'
+make -C libft/
+ 
+gcc -Wall -Wextra -Werror  -c sources/sort3.c -o sources/sort3.o 
+ 
+gcc -Wall -Wextra -Werror  -c sources/stack_add.c -o sources/stack_add.o 
+gcc -Wall -Wextra -Werror  -c sources/stack_errors.c -o sources/stack_errors.o 
+gcc -Wall -Wextra -Werror  -c sources/stack_init.c -o sources/stack_init.o 
+ 
+gcc -Wall -Wextra -Werror sources/push_swap.o sources/operation_push.o sources/operation_reverse.o sources/operation_rotate.o sources/operation_swap.o sources/sort0.o sources/sort1.o sources/sort2.o sources/sort3.o sources/stack_add.o sources/stack_errors.o sources/stack_init.o libft/libft.a -o push_swap
+make: Leaving directory `/Users/hamchur/Desktop/Push_swap'
+ 

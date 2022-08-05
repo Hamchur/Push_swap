@@ -110,12 +110,10 @@ void	sort_ba5(t_all *all)
 	int		flag;
 	int		min;
 	int		i;
-	t_node	*tmp;
 
 	i = all->size_b;
 	min = all->stack_a->prev->index + 1;
 	flag = all->stack_a->flag;
-	tmp = all->stack_a;
 	while (i > 3)
 	{
 		if (all->stack_b->index == min)

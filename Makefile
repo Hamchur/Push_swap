@@ -61,7 +61,7 @@ $(NAME):	$(OBJ)
 			$(CC) $(FLAGS) $(OBJ) $(LIB) -o $(NAME)
 
 %.o:		%.c $(INCLUDE)$(HEADER)
-			$(CC) $(FLAGS)  -c $< -o $@ -I $(INCLUDE)
+			$(CC) $(FLAGS)  -c $< -o $@ 
 
 bonus:		libft $(OBJ_B)
 			$(CC) $(FLAGS) $(OBJ_B) $(LIB) -o $(NAME_B)
